@@ -6,10 +6,10 @@ const SECRET = process.env.TOKEN_SECRET;
 /**
  * @return {Promise} string
  */
-export function generateAccessToken ({ id, name }, expiresIn) {
+export function generateAccessToken ({ id, email }, expiresIn) {
     let config = {
             payload: {
-                name,
+                email,
                 uid: id,
             },
             options: {

@@ -1,23 +1,39 @@
 import VaccineService from '../services/VaccineService';
 import Util from '../utils/ResUtil';
+import UserService from "../services/UserService";
 
 const util = new Util();
 
 class VaccinationController {
     static async getAllVaccines(req, res) {
-            const { token } = res.locals;
-            if(token) {
-                console.log('SET Data')
-                util.setAdditionalData({ token });
-            }
-            // console.log(token+'RES TOKEN');
+        const { id } = req.params;
+        console.log(id+'ID');
+        // const { token } = res.locals;
+        //     if(token) {
+        //         console.log('SET Data')
+        //         util.setAdditionalData({ token });
+        //     }
             try {
-                const allVaccines = await VaccineService.getAllNotes();
-                if (allVaccines.length > 0) {
-                    util.setSuccess(200, 'Vaccines retrieved', allVaccines);
-                } else {
-                    util.setSuccess(200, 'No Vaccines found');
-                }
+                // const email = await UserService.userExist({
+                //     email: 'wwu@sxsx.com'
+                // },{ attributes: ['email'] }
+                // );
+                // if(!email){
+                //     util.setSuccess(200, 'No Users found');
+                //     return util.send(res);
+                // }
+                console.log(id+'ID');
+
+                const allUserVaccines = await VaccineService.getAllUserVaccines(id);
+                console.log(allUserVaccines+'ID');
+
+                // if (allUserVaccines.length > 0) {
+
+                    util.setSuccess(200, 'Vaccines retrieved', allUserVaccines);
+                // } else {
+                //     util.setSuccess(200, 'No Vaccines found');
+                // }
+
                 return util.send(res);
             }
             catch (error) {
@@ -27,13 +43,18 @@ class VaccinationController {
     }
 
     static async addVaccine(req, res) {
-        if (!req.body.vaccineName || !req.body.userId) {
+        if (!req.body.vaccineName || !req.body.email || !req.body.vaccinationDate) {
             util.setError(400, 'Please fill in all required fields!');
             return util.send(res);
         }
-        const newVaccine = req.body;
+        const newVaccine = {
+            vaccine_name: req.body.vaccineName,
+            user_email: req.body.email,
+            vaccination_date: req.body.vaccinationDate,
+        };
+console.log(JSON.stringify(newVaccine))
         try {
-            const createdVaccine = await VaccineService.addNote(newVaccine);
+            const createdVaccine = await VaccineService.addVaccine(newVaccine);
             util.setSuccess(201, 'Vaccine Added!', createdVaccine);
             return util.send(res);
         } catch (error) {
@@ -50,7 +71,7 @@ class VaccinationController {
             return util.send(res);
         }
         try {
-            const updatedVaccine = await VaccineService.updateNote(id, alteredVaccine);
+            const updatedVaccine = await VaccineService.updateVaccine(id, alteredVaccine);
             if (!updatedVaccine) {
                 util.setError(404, `Cannot find Vaccine with the id: ${id}`);
             } else {
@@ -70,9 +91,8 @@ class VaccinationController {
             util.setError(400, 'Please input a valid numeric value');
             return util.send(res);
         }
-
         try {
-            const Vaccine = await VaccineService.getNote(id);
+            const Vaccine = await VaccineService.getSomeVaccines(id);
 
             if (!Vaccine) {
                 util.setError(404, `Cannot find Vaccine with the id ${id}`);
@@ -95,7 +115,7 @@ class VaccinationController {
         }
 
         try {
-            const vaccineToDelete = await VaccineService.deleteNote(id);
+            const vaccineToDelete = await VaccineService.deleteVaccine(id);
 
             if (vaccineToDelete) {
                 util.setSuccess(200, 'Vaccine deleted');

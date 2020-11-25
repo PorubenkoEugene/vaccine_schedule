@@ -1,7 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a2812c38-3cf6-4cbb-9bc1-818ff8ef3922" name="Default Changelist" comment="" />
+    <list default="true" id="a2812c38-3cf6-4cbb-9bc1-818ff8ef3922" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/api/OLD/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/OLD/migrations/create-user-vaccines.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/OLD/migrations/create-user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/OLD/migrations/create-vaccine.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/OLD/models/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/OLD/models/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/OLD/models/user_vaccines.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/OLD/models/vaccine.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/OLD/seeders/seed-vaccines.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/server/src/migrations/20201125104007-create-user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/server/src/migrations/20201125105949-create-vaccine.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/server/src/migrations/20201125110916-create-user-vaccine.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/server/src/models/user_vaccine.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4adb8499-97f8-4d1c-9d4a-ffebcf00c1ad.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4adb8499-97f8-4d1c-9d4a-ffebcf00c1ad.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/server/controllers/UserController.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/server/controllers/UserController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/server/controllers/VaccinationController.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/server/controllers/VaccinationController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/server/routes/VaccinationRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/server/routes/VaccinationRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/server/services/UserService.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/server/services/UserService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/server/services/VaccineService.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/server/services/VaccineService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/server/services/mailService/nodemailer.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/server/services/mailService/nodemailer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/server/src/config/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/server/src/config/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/server/src/migrations/create-history.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/server/src/migrations/create-user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/server/src/migrations/create-vaccine.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/server/src/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/server/src/models/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/server/src/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/server/src/models/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/server/src/models/vaccine.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/server/src/models/vaccine.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/server/src/models/vaccine_history.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/server/src/seeders/seed-history.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/OLD/seeders/seed-history.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/server/src/seeders/seed-user.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/OLD/seeders/seed-user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/server/src/seeders/seed-vaccines.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/server/utils/RefreshSessionEntity.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/server/utils/RefreshSessionEntity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/server/utils/accessToken.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/server/utils/accessToken.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,44 +104,71 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1k8vqH5bYpWCdr2tb6UTfZsgBLj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/api/server/src/seeders" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Sequelize relationship" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.mongoOptions" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api/OLD" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/api/server/src/seeders" />
       <recent name="$PROJECT_DIR$/api/server/src/migrations" />
+      <recent name="$PROJECT_DIR$/api/OLD" />
+      <recent name="$PROJECT_DIR$/api/server/src/seeders" />
       <recent name="$PROJECT_DIR$/api/server/src/models" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.seed:reset">
-    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="dev" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="npm.migrate">
     <configuration name="migrate" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
         <script value="migrate" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="migrate:reset" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="migrate:reset" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="migrate:undo" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="migrate:undo" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -133,10 +196,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.seed:reset" />
-        <item itemvalue="npm.seed" />
-        <item itemvalue="npm.dev" />
         <item itemvalue="npm.migrate" />
+        <item itemvalue="npm.migrate:undo" />
+        <item itemvalue="npm.migrate:reset" />
+        <item itemvalue="npm.seed" />
+        <item itemvalue="npm.seed:reset" />
       </list>
     </recent_temporary>
   </component>
@@ -163,45 +227,114 @@
       <option name="presentableId" value="Default" />
       <updated>1605095222700</updated>
       <workItem from="1605095224670" duration="20078000" />
-      <workItem from="1605177753670" duration="1556000" />
+      <workItem from="1605177753670" duration="25345000" />
+      <workItem from="1605729655193" duration="813000" />
+      <workItem from="1605861904385" duration="70428000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="608" y="217" width="765" height="679" key="#VaccinationController.js" timestamp="1606136309033">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="608" y="217" width="765" height="679" key="#VaccinationController.js/72.27.1848.1053@72.27.1848.1053" timestamp="1606136309033" />
     <state x="582" y="209" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605177301812">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="582" y="209" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1605177301812" />
-    <state width="1792" height="189" key="GridCell.Tab.0.bottom" timestamp="1605178110854">
+    <state x="451" y="27" width="1080" height="1053" key="CommitChangelistDialog2" timestamp="1606339767471">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1792" height="189" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1605178110854" />
-    <state width="1792" height="189" key="GridCell.Tab.0.center" timestamp="1605178110853">
+    <state x="451" y="27" width="1080" height="1053" key="CommitChangelistDialog2/72.27.1848.1053@72.27.1848.1053" timestamp="1606339767471" />
+    <state x="729" y="256" width="524" height="601" key="FileChooserDialogImpl" timestamp="1606304861057">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1792" height="189" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1605178110853" />
-    <state width="1792" height="189" key="GridCell.Tab.0.left" timestamp="1605178110852">
+    <state x="729" y="256" width="524" height="601" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1606304861057" />
+    <state width="1792" height="189" key="GridCell.Tab.0.bottom" timestamp="1606339703511">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1792" height="189" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1605178110852" />
-    <state width="1792" height="189" key="GridCell.Tab.0.right" timestamp="1605178110854">
+    <state width="1792" height="189" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1606339703511" />
+    <state width="1792" height="189" key="GridCell.Tab.0.center" timestamp="1606339703511">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1792" height="189" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1605178110853" />
+    <state width="1792" height="189" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1606339703511" />
+    <state width="1792" height="189" key="GridCell.Tab.0.left" timestamp="1606339703510">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1792" height="189" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1606339703510" />
+    <state width="1792" height="189" key="GridCell.Tab.0.right" timestamp="1606339703511">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1792" height="189" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1606339703511" />
+    <state width="1792" height="297" key="GridCell.Tab.1.bottom" timestamp="1606303698670">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1792" height="297" key="GridCell.Tab.1.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1606303698670" />
+    <state width="1792" height="297" key="GridCell.Tab.1.center" timestamp="1606303698669">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1792" height="297" key="GridCell.Tab.1.center/72.27.1848.1053@72.27.1848.1053" timestamp="1606303698669" />
+    <state width="1792" height="297" key="GridCell.Tab.1.left" timestamp="1606303698668">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1792" height="297" key="GridCell.Tab.1.left/72.27.1848.1053@72.27.1848.1053" timestamp="1606303698668" />
+    <state width="1792" height="297" key="GridCell.Tab.1.right" timestamp="1606303698669">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1792" height="297" key="GridCell.Tab.1.right/72.27.1848.1053@72.27.1848.1053" timestamp="1606303698669" />
+    <state width="1792" height="297" key="GridCell.Tab.2.bottom" timestamp="1606303698672">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1792" height="297" key="GridCell.Tab.2.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1606303698672" />
+    <state width="1792" height="297" key="GridCell.Tab.2.center" timestamp="1606303698671">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1792" height="297" key="GridCell.Tab.2.center/72.27.1848.1053@72.27.1848.1053" timestamp="1606303698671" />
+    <state width="1792" height="297" key="GridCell.Tab.2.left" timestamp="1606303698670">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1792" height="297" key="GridCell.Tab.2.left/72.27.1848.1053@72.27.1848.1053" timestamp="1606303698670" />
+    <state width="1792" height="297" key="GridCell.Tab.2.right" timestamp="1606303698671">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1792" height="297" key="GridCell.Tab.2.right/72.27.1848.1053@72.27.1848.1053" timestamp="1606303698671" />
+    <state width="1792" height="297" key="GridCell.Tab.3.bottom" timestamp="1606303698674">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1792" height="297" key="GridCell.Tab.3.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1606303698674" />
+    <state width="1792" height="297" key="GridCell.Tab.3.center" timestamp="1606303698673">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1792" height="297" key="GridCell.Tab.3.center/72.27.1848.1053@72.27.1848.1053" timestamp="1606303698673" />
+    <state width="1792" height="297" key="GridCell.Tab.3.left" timestamp="1606303698673">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1792" height="297" key="GridCell.Tab.3.left/72.27.1848.1053@72.27.1848.1053" timestamp="1606303698673" />
+    <state width="1792" height="297" key="GridCell.Tab.3.right" timestamp="1606303698674">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1792" height="297" key="GridCell.Tab.3.right/72.27.1848.1053@72.27.1848.1053" timestamp="1606303698674" />
     <state width="318" height="593" key="HiddenNamespacesPopup" timestamp="1605177498461">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state width="318" height="593" key="HiddenNamespacesPopup/72.27.1848.1053@72.27.1848.1053" timestamp="1605177498461" />
-    <state x="361" y="101" width="1269" height="912" key="SettingsEditor" timestamp="1605178100823">
+    <state x="361" y="101" width="1269" height="912" key="SettingsEditor" timestamp="1606211874310">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="361" y="101" width="1269" height="912" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1605178100823" />
+    <state x="361" y="101" width="1269" height="912" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1606211874310" />
     <state x="576" y="248" width="840" height="1034" key="run.anything.popup" timestamp="1605107093779">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="576" y="248" width="840" height="1034" key="run.anything.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1605107093779" />
+    <state x="575" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1606305349923">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="575" y="45" width="840" height="1034" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1606305349923" />
   </component>
 </project>

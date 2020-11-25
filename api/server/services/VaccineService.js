@@ -2,9 +2,19 @@
 import database from '../src/models';
 
 class VaccineService {
-    static async getAllVaccines() {
+    static async getAllUserVaccines(id) {
         try {
-            return await database.Vaccine.findAll();
+            console.log('AAA')
+            // return await database.UserVaccines.findAll({
+            //         where: { user_email: email }
+            const vaccineToUpdate = await database.User.findOne({
+                where: { email: 'wwu@sxsx.com' },
+                include: 'vaccine'
+            });
+            return vaccineToUpdate
+                // include: database.Users,
+
+
         } catch (error) {
             throw error;
         }
@@ -12,7 +22,8 @@ class VaccineService {
 
     static async addVaccine(newVaccine) {
         try {
-            return await database.Vaccine.create(newVaccine);
+            const addedVaccine = await database.UserVaccines.create(newVaccine);
+            return addedVaccine;
         } catch (error) {
             throw error;
         }

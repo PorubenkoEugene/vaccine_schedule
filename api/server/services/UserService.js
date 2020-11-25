@@ -33,10 +33,10 @@ class UserService {
     }
 
 
-    static async userExist(args={}) {
+    static async userExist(args={},attributes={}) {
         try {
             const User = await database.User.findOne({
-                where: { ...args }
+                where: { ...args }, ...attributes
             });
             return User;
         } catch (error) {

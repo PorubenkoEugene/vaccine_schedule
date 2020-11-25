@@ -20,7 +20,7 @@ app.use('/api/v1/auth/users', userRoutes);
 app.use('/api/v1/vaccination', vaccinationRoutes);
 // when a random route is inputed
 app.get('*', (req, res) => res.status(200).send({
-    message: 'Welcome to notes API.'
+    message: 'Welcome to notes API.'+req.url
 }));
 app.listen(port, () => {
     console.log(`Server is running on PORT ${port}`);
