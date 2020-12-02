@@ -7,39 +7,39 @@ const util = new Util();
 class VaccinationController {
     static async getAllVaccines(req, res) {
         const { id } = req.params;
-        console.log(id+'ID');
         // const { token } = res.locals;
         //     if(token) {
         //         console.log('SET Data')
         //         util.setAdditionalData({ token });
         //     }
             try {
-                // const email = await UserService.userExist({
-                //     email: 'wwu@sxsx.com'
-                // },{ attributes: ['email'] }
-                // );
-                // if(!email){
-                //     util.setSuccess(200, 'No Users found');
-                //     return util.send(res);
-                // }
-                console.log(id+'ID');
-
                 const allUserVaccines = await VaccineService.getAllUserVaccines(id);
-                console.log(allUserVaccines+'ID');
 
-                // if (allUserVaccines.length > 0) {
-
+                if (allUserVaccines.length > 0) {
                     util.setSuccess(200, 'Vaccines retrieved', allUserVaccines);
-                // } else {
-                //     util.setSuccess(200, 'No Vaccines found');
-                // }
-
+                } else {
+                    util.setSuccess(200, 'No Vaccines found');
+                }
                 return util.send(res);
             }
             catch (error) {
                     util.setError(400, error);
                     return util.send(res);
             }
+    }
+    static async getUpcomingVaccines(req, res) {
+        const { id } = req.params;
+        const { interval } = req.query;
+        console.log(interval+'interval');
+        try {
+            const upcomingVaccines =
+                await VaccineService.getUpcomingUserVaccines(id, interval);
+            util.setSuccess(200, 'Vaccines retrieved', upcomingVaccines);
+            return util.send(res);
+        } catch (error) {
+            util.setError(400, error);
+            return util.send(res);
+        }
     }
 
     static async addVaccine(req, res) {

@@ -8,11 +8,11 @@ module.exports = {
         // primaryKey: true,
         type: Sequelize.INTEGER
       },
-      vaccine: {
+      vaccine_name: {
         type: Sequelize.STRING,
         references: {         // User hasMany Vaccines n:n
           model: 'vaccines',
-          key: 'vaccine_name'
+          key: 'name'
         }
       },
       date: {

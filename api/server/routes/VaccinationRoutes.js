@@ -7,6 +7,7 @@ const router = Router();
 
 // router.get('/', validate_jwt, error, VaccinationController.getAllVaccines);
 router.get('/:id', VaccinationController.getAllVaccines);
+router.get('/:id/upcoming', VaccinationController.getUpcomingVaccines);
 router.post('/', VaccinationController.addVaccine);
 router.get('/', VaccinationController.getUpcomingVaccine);// upcoming vaccination
 router.put('/:id', VaccinationController.updateVaccine);//

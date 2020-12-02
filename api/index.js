@@ -17,7 +17,7 @@ app.use(cookieParser());
 const port = process.env.PORT || 8000;
 
 app.use('/api/v1/auth/users', userRoutes);
-app.use('/api/v1/vaccination', vaccinationRoutes);
+app.use('/api/v1/vaccines', vaccinationRoutes);
 // when a random route is inputed
 app.get('*', (req, res) => res.status(200).send({
     message: 'Welcome to notes API.'+req.url
