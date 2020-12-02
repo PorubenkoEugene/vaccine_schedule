@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a2812c38-3cf6-4cbb-9bc1-818ff8ef3922" name="Default Changelist" comment="" />
+    <list default="true" id="a2812c38-3cf6-4cbb-9bc1-818ff8ef3922" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -190,7 +192,7 @@
       <workItem from="1605177753670" duration="25345000" />
       <workItem from="1605729655193" duration="813000" />
       <workItem from="1605861904385" duration="80446000" />
-      <workItem from="1606461165236" duration="50724000" />
+      <workItem from="1606461165236" duration="51047000" />
     </task>
     <task id="LOCAL-00001" summary="add migrations">
       <created>1606339865182</created>
