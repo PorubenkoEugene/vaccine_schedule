@@ -39,14 +39,14 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
         },
     },{
-        hooks: {
-            beforeCreate: (user) => {
-                user.id = uuidv4();
-                const salt = bcrypt.genSaltSync(10);
-                user.password = bcrypt.hashSync(user.password, salt);
-                user.urlString = randomString();
-            }
-        },
+        // hooks: {
+        //     beforeCreate: (user) => {
+        //         user.id = uuidv4();
+        //         const salt = bcrypt.genSaltSync(10);
+        //         user.password = bcrypt.hashSync(user.password, salt);
+        //         user.urlString = randomString();
+        //     }
+        // },
     });
     User.prototype.validPassword = function(password) {
         return bcrypt.compareSync(password, this.password);
